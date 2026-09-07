@@ -1,0 +1,66 @@
+[gd_scene load_steps=5 format=3 uid="uid://brtfp1fmrjbdd"]
+
+[ext_resource type="Script" uid="uid://f7mmk455cy7u" path="res://elements/rules/rules.gd" id="1_0txao"]
+[ext_resource type="Texture2D" uid="uid://cbcjthuu88qe1" path="res://assets/mainmenu_background.png" id="1_864fb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s4u3n"]
+bg_color = Color(0, 0, 0, 0.6862745)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7fvlm"]
+bg_color = Color(0, 0, 0, 0.74509805)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+
+[node name="Rules" type="Node2D"]
+script = ExtResource("1_0txao")
+
+[node name="background" type="Sprite2D" parent="."]
+texture_filter = 3
+position = Vector2(960.00006, 540.5)
+scale = Vector2(1.25, 1.0556641)
+texture = ExtResource("1_864fb")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_top = 5.0
+offset_right = 1920.0
+offset_bottom = 1081.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 25
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(1000, 600)
+layout_mode = 2
+theme_override_font_sizes/font_size = 52
+text = "ПРАВИЛА:
+В виртуальной квест-эксурсии \"Ожившая история\"  музейной комнаты \"Шляхi нашых гадоу\" вы будете проходить различные станции-площадки
+на которых вам придется отвечать на вопросы и выполнять 
+всяческие увлекательные задания."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="back_button" type="Button" parent="."]
+offset_left = 1652.0
+offset_top = 954.0
+offset_right = 1874.0
+offset_bottom = 1038.0
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_s4u3n")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7fvlm")
+text = "Назад"
+
+[connection signal="pressed" from="back_button" to="." method="_on_back_button_pressed"]

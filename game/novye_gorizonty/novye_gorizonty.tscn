@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://cp0ol1n73u676"]
+
+[ext_resource type="Texture2D" uid="uid://bq8txkkqln8mo" path="res://assets/novye-goryzonty.jpg" id="1_6ppix"]
+[ext_resource type="Script" uid="uid://i20c34202gma" path="res://game/novye_gorizonty/novye_gorizonty.gd" id="1_y605m"]
+[ext_resource type="PackedScene" uid="uid://cqerqrg0j711w" path="res://UI/StationTransition/station_transition.tscn" id="4_5hq8e"]
+
+[node name="novye_gorizonty" type="Node2D"]
+script = ExtResource("1_y605m")
+
+[node name="background" type="Sprite2D" parent="."]
+texture_filter = 4
+position = Vector2(967, 537.5)
+scale = Vector2(1.521875, 1.1572917)
+texture = ExtResource("1_6ppix")
+
+[node name="StationTransition" parent="." instance=ExtResource("4_5hq8e")]

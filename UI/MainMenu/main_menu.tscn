@@ -1,0 +1,147 @@
+[gd_scene load_steps=11 format=3 uid="uid://4i2urgxv1spo"]
+
+[ext_resource type="Script" uid="uid://cy455q0wcqfxi" path="res://UI/MainMenu/main_menu.gd" id="1_3jj5y"]
+[ext_resource type="Texture2D" uid="uid://cbcjthuu88qe1" path="res://assets/mainmenu_background.png" id="1_jld46"]
+[ext_resource type="PackedScene" uid="uid://dkopbxxm7cv3e" path="res://elements/Transition/fade_in.tscn" id="2_h8rmy"]
+[ext_resource type="FontFile" uid="uid://c3tuyfjpdywbo" path="res://fonts/impact.ttf" id="3_iyy2y"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jld46"]
+bg_color = Color(0, 0, 0, 0.6862745)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t17p2"]
+bg_color = Color(0, 0, 0, 0.74509805)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3jj5y"]
+bg_color = Color(0, 0, 0, 0.6862745)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iyy2y"]
+bg_color = Color(0, 0, 0, 0.74509805)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h8rmy"]
+bg_color = Color(0, 0, 0, 0.6862745)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_trkrl"]
+bg_color = Color(0, 0, 0, 0.74509805)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+
+[node name="MainMenu" type="Node2D"]
+script = ExtResource("1_3jj5y")
+
+[node name="TransitionScreen" parent="." instance=ExtResource("2_h8rmy")]
+
+[node name="background" type="Sprite2D" parent="."]
+texture_filter = 3
+position = Vector2(960.00006, 540.5)
+scale = Vector2(1.25, 1.0556641)
+texture = ExtResource("1_jld46")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_top = 5.0
+offset_right = 1920.0
+offset_bottom = 1081.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 25
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="header" type="Label" parent="MarginContainer/VBoxContainer"]
+texture_filter = 3
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("3_iyy2y")
+theme_override_font_sizes/font_size = 104
+text = "ОЖИВШАЯ ИСТОРИЯ"
+horizontal_alignment = 1
+
+[node name="subheader" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_iyy2y")
+theme_override_font_sizes/font_size = 32
+text = "Виртуальная квест-экскурсия"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control" type="Control" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="play_button" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_jld46")
+theme_override_styles/hover = SubResource("StyleBoxFlat_t17p2")
+text = "НАЧАТЬ"
+
+[node name="Control2" type="Control" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="rules_button" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_3jj5y")
+theme_override_styles/hover = SubResource("StyleBoxFlat_iyy2y")
+text = "ПРАВИЛА"
+
+[node name="Control3" type="Control" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="exit_button" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_h8rmy")
+theme_override_styles/hover = SubResource("StyleBoxFlat_trkrl")
+text = "ВЫХОД
+"
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/play_button" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/rules_button" to="." method="_on_rules_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer3/exit_button" to="." method="_on_exit_button_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

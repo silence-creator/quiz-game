@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://bqnnk7j0novat"]
+
+[ext_resource type="Script" uid="uid://cfjdojs4rlp3f" path="res://game/game.gd" id="1_h7iqs"]
+[ext_resource type="Texture2D" uid="uid://cjckq6xtpoafq" path="res://assets/start_background.jpg" id="1_l1rk1"]
+[ext_resource type="PackedScene" uid="uid://cqerqrg0j711w" path="res://UI/StationTransition/station_transition.tscn" id="2_4fuuu"]
+[ext_resource type="PackedScene" uid="uid://mtw8x05fgihs" path="res://elements/guide/guide.tscn" id="2_vasa2"]
+[ext_resource type="Texture2D" uid="uid://bbl1b7roxubuk" path="res://assets/voyshnar.jpg" id="5_dxrkv"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_h7iqs")
+
+[node name="StationTransition" parent="." instance=ExtResource("2_4fuuu")]
+
+[node name="background" type="Sprite2D" parent="."]
+position = Vector2(960, 538.5)
+scale = Vector2(1.5, 1.125)
+texture = ExtResource("1_l1rk1")
+
+[node name="Guide" parent="." instance=ExtResource("2_vasa2")]
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
+[node name="Photo" type="Sprite2D" parent="."]
+visible = false
+top_level = true
+position = Vector2(265.84265, 380.5)
+scale = Vector2(1.243895, 1.2165178)
+texture = ExtResource("5_dxrkv")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

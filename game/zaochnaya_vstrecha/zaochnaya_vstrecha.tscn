@@ -1,0 +1,150 @@
+[gd_scene load_steps=14 format=3 uid="uid://ddh62puybwhrw"]
+
+[ext_resource type="Texture2D" uid="uid://yr4mkoftkbf4" path="res://assets/photo_2025-10-13_16-31-07.jpg" id="1_0eotu"]
+[ext_resource type="Script" uid="uid://cmf1i8qeuu6eh" path="res://game/zaochnaya_vstrecha/zaochnaya_vstrecha.gd" id="1_ove6q"]
+[ext_resource type="Texture2D" uid="uid://fk0hee2fhie5" path="res://assets/turn_page/0.png" id="2_ove6q"]
+[ext_resource type="Texture2D" uid="uid://bupa8lj6eyvsa" path="res://assets/turn_page/1.png" id="3_o2axd"]
+[ext_resource type="Texture2D" uid="uid://v0rp5af4ttm2" path="res://assets/turn_page/2.png" id="4_xd3rh"]
+[ext_resource type="Texture2D" uid="uid://s1xbtnjjiwle" path="res://assets/turn_page/3.png" id="5_pt6m3"]
+[ext_resource type="Texture2D" uid="uid://v6rkbu7wm7eu" path="res://assets/turn_page/4.png" id="6_snxtc"]
+[ext_resource type="Texture2D" uid="uid://dgb0jxng5alxk" path="res://assets/turn_page/5.png" id="7_sqgqi"]
+[ext_resource type="Texture2D" uid="uid://c5qq6pvkjleyy" path="res://assets/turn_page/6.png" id="8_1o8jb"]
+[ext_resource type="FontFile" uid="uid://c3tuyfjpdywbo" path="res://fonts/impact.ttf" id="9_ud7i2"]
+[ext_resource type="FontFile" uid="uid://c6g46qk8jbied" path="res://fonts/tildascript-regular.otf" id="11_o2axd"]
+[ext_resource type="Texture2D" uid="uid://p2jvxic7rrtr" path="res://assets/lol.jpg" id="12_xd3rh"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_78jbw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ove6q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_o2axd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_xd3rh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_pt6m3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_snxtc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_sqgqi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_1o8jb")
+}],
+"loop": true,
+"name": &"turn",
+"speed": 8.0
+}]
+
+[node name="ZaochnayaVstrecha" type="Node2D"]
+script = ExtResource("1_ove6q")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.288518, 0.28851798, 0.28851798, 1)
+texture_filter = 4
+position = Vector2(958.00006, 539.5)
+scale = Vector2(1.515625, 1.1364584)
+texture = ExtResource("1_0eotu")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(950.5, 641)
+scale = Vector2(1.853, 1)
+sprite_frames = SubResource("SpriteFrames_78jbw")
+animation = &"turn"
+frame = 6
+frame_progress = 0.7759986
+
+[node name="header" type="Label" parent="."]
+texture_filter = 3
+offset_left = 32.0
+offset_top = 45.0
+offset_right = 1907.0
+offset_bottom = 302.0
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("9_ud7i2")
+theme_override_font_sizes/font_size = 104
+text = "Заслуженные награды 
+Щербачени Михаила Никодимовича "
+horizontal_alignment = 1
+
+[node name="header2" type="Label" parent="."]
+texture_filter = 3
+offset_left = 78.0
+offset_top = 351.0
+offset_right = 928.0
+offset_bottom = 946.0
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_o2axd")
+theme_override_font_sizes/font_size = 42
+text = "Орден «Отечественной войны 2 ст.»
+Орден «Красная звезда» - за в/отличия
+Медаль «За боевые заслуги»
+Медаль «За освобождение Варшавы»
+Медаль «За победу над Германией»
+Польская медаль «За Варшаву»
+«20 лет Победы в ВОВ 1941– 1945»
+«50 лет ВС  СССР»
+«30 лет Победы в ВОВ 1941– 1945»
+«40 лет обеды в ВОВ 1941– 1945»
+«50 лет ВС СССР»
+«60 лет ВС СССР»
+«70 лет ВС СССР»"
+autowrap_mode = 2
+
+[node name="header2" type="Label" parent="header2"]
+texture_filter = 3
+layout_mode = 0
+offset_left = 887.0
+offset_top = -1.0
+offset_right = 1737.0
+offset_bottom = 594.0
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_o2axd")
+theme_override_font_sizes/font_size = 42
+text = "«20 лет Победы в ВОВ 1941– 1945»
+«50 лет ВС  СССР»
+«30 лет Победы в ВОВ 1941– 1945»
+«40 лет обеды в ВОВ 1941– 1945»
+«50 лет ВС СССР»
+«60 лет ВС СССР»
+«70 лет ВС СССР»"
+autowrap_mode = 2
+
+[node name="CheckButton" type="Button" parent="."]
+offset_left = 1631.0
+offset_top = 971.0
+offset_right = 1855.0
+offset_bottom = 1057.0
+theme_override_font_sizes/font_size = 32
+text = "ДАЛЬШЕ"
+
+[node name="CheckButton2" type="Button" parent="."]
+offset_left = 42.0
+offset_top = 979.0
+offset_right = 266.0
+offset_bottom = 1065.0
+theme_override_font_sizes/font_size = 32
+text = "НАЗАД"
+
+[node name="CheckButton3" type="Button" parent="."]
+offset_left = 780.0
+offset_top = 967.0
+offset_right = 1107.0
+offset_bottom = 1064.0
+theme_override_font_sizes/font_size = 42
+text = "ЗАВЕРШИТЬ"
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(1376, 645.0001)
+scale = Vector2(0.4439834, 0.4439834)
+texture = ExtResource("12_xd3rh")
+
+[connection signal="pressed" from="CheckButton3" to="." method="_finish"]

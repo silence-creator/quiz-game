@@ -1,0 +1,432 @@
+[gd_scene load_steps=12 format=3 uid="uid://fjrns3kvjv07"]
+
+[ext_resource type="Texture2D" uid="uid://dup5wsowvjc6v" path="res://assets/photo_2025-10-13_16-31-18.jpg" id="1_5eqxb"]
+[ext_resource type="Script" uid="uid://bswownd1gvn33" path="res://game/ploshadka/ploshadka.gd" id="1_sp0ke"]
+[ext_resource type="Texture2D" uid="uid://domrxwdrawri0" path="res://assets/istockphoto-688001540-612x612.jpg" id="2_4dxdi"]
+[ext_resource type="Texture2D" uid="uid://dxg3pakq3a20p" path="res://assets/500x500-4(23).8db.jpg" id="3_wxowg"]
+[ext_resource type="Texture2D" uid="uid://cun73lc1sl4ky" path="res://assets/cd8e2c522d62d8231165858c157e2cf2.jpg" id="4_sp0ke"]
+[ext_resource type="Texture2D" uid="uid://dhi2numfaareb" path="res://assets/unnamed.jpg" id="5_ync3n"]
+[ext_resource type="Texture2D" uid="uid://dxy4xy2kqjjoo" path="res://assets/istockphoto-1467812717-612x612.jpg" id="6_8aw5h"]
+[ext_resource type="Texture2D" uid="uid://bvhob7w6bgnai" path="res://assets/c792291da8dcf2e78a2e5806e11dfac6-scaled.jpg" id="7_ngk1x"]
+[ext_resource type="Texture2D" uid="uid://dufqjr0k7v03d" path="res://assets/3c1236f5929ac18c0522a00b94e0408a.jpg" id="8_vuklg"]
+[ext_resource type="Texture2D" uid="uid://kyma6vwdtsb5" path="res://assets/87731.970.jpg" id="9_cpcxm"]
+[ext_resource type="Texture2D" uid="uid://cbcjthuu88qe1" path="res://assets/mainmenu_background.png" id="11_ync3n"]
+
+[node name="Ploshadka" type="Node2D"]
+script = ExtResource("1_sp0ke")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.288518, 0.28851798, 0.28851798, 1)
+texture_filter = 4
+position = Vector2(958.00006, 539.5)
+scale = Vector2(1.515625, 1.1364584)
+texture = ExtResource("1_5eqxb")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+visible = false
+self_modulate = Color(100.004, 100, 100, 1)
+position = Vector2(697.99994, 505.00003)
+scale = Vector2(0.8255209, 0.84960943)
+texture = ExtResource("11_ync3n")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D2"]
+modulate = Color(10, 10.004, 0, 1)
+position = Vector2(2.1924973, -0.3414688)
+scale = Vector2(0.97348595, 0.9615863)
+texture = ExtResource("11_ync3n")
+
+[node name="task_1" type="Node2D" parent="."]
+
+[node name="RightContainer" type="VBoxContainer" parent="task_1"]
+offset_left = 1291.0
+offset_top = 1.0
+offset_right = 1910.0
+offset_bottom = 1076.0
+alignment = 1
+
+[node name="Button2" type="Button" parent="task_1/RightContainer"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "лаборанты"
+
+[node name="Control2" type="Control" parent="task_1/RightContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Button" type="Button" parent="task_1/RightContainer"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "операторы машинного доения"
+
+[node name="Control" type="Control" parent="task_1/RightContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Button8" type="Button" parent="task_1/RightContainer"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "трактористы(то)"
+
+[node name="Control3" type="Control" parent="task_1/RightContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="task_1/RightContainer"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "бухгалтера, счетоводы"
+
+[node name="Control4" type="Control" parent="task_1/RightContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Button10" type="Button" parent="task_1/RightContainer"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "программисты"
+
+[node name="Control5" type="Control" parent="task_1/RightContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="task_1/RightContainer"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "юристы"
+
+[node name="Control6" type="Control" parent="task_1/RightContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="task_1/RightContainer"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "продавцы"
+
+[node name="Control7" type="Control" parent="task_1/RightContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="task_1/RightContainer"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "повара"
+
+[node name="Control8" type="Control" parent="task_1/RightContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="RightContainer2" type="VBoxContainer" parent="task_1"]
+offset_left = 14.0
+offset_top = 72.0
+offset_right = 317.0
+offset_bottom = 1147.0
+alignment = 1
+
+[node name="Button2" type="Button" parent="task_1/RightContainer2"]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "колбы"
+
+[node name="Sprite2D" type="Sprite2D" parent="task_1/RightContainer2/Button2"]
+position = Vector2(150, 150)
+scale = Vector2(0.4640523, 0.4640523)
+texture = ExtResource("2_4dxdi")
+
+[node name="Control2" type="Control" parent="task_1/RightContainer2"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="task_1/RightContainer2"]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "ноутбук"
+
+[node name="Sprite2D" type="Sprite2D" parent="task_1/RightContainer2/Button3"]
+position = Vector2(149.99998, 150.5)
+scale = Vector2(0.56399995, 0.566)
+texture = ExtResource("3_wxowg")
+
+[node name="Control3" type="Control" parent="task_1/RightContainer2"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="RightContainer3" type="VBoxContainer" parent="task_1"]
+offset_left = 330.0
+offset_top = 72.0
+offset_right = 633.0
+offset_bottom = 1147.0
+alignment = 1
+
+[node name="Button2" type="Button" parent="task_1/RightContainer3"]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "книга \"Уголовный 
+кодекс Республики 
+Беларусь\""
+
+[node name="Sprite2D" type="Sprite2D" parent="task_1/RightContainer3/Button2"]
+position = Vector2(152.00002, 149.49998)
+scale = Vector2(0.35499996, 0.43605545)
+texture = ExtResource("4_sp0ke")
+
+[node name="Control2" type="Control" parent="task_1/RightContainer3"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="task_1/RightContainer3"]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "корова, дойка, аппарат"
+
+[node name="Sprite2D" type="Sprite2D" parent="task_1/RightContainer3/Button3"]
+position = Vector2(152.39218, 150.5)
+scale = Vector2(0.4720262, 0.70249987)
+texture = ExtResource("5_ync3n")
+
+[node name="Control3" type="Control" parent="task_1/RightContainer3"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="RightContainer4" type="VBoxContainer" parent="task_1"]
+offset_left = 644.0
+offset_top = 72.0
+offset_right = 947.0
+offset_bottom = 1147.0
+alignment = 1
+
+[node name="Button2" type="Button" parent="task_1/RightContainer4"]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "трактор на поле"
+
+[node name="Sprite2D" type="Sprite2D" parent="task_1/RightContainer4/Button2"]
+position = Vector2(150, 149.50002)
+scale = Vector2(0.4640523, 0.5452793)
+texture = ExtResource("6_8aw5h")
+
+[node name="Control2" type="Control" parent="task_1/RightContainer4"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="task_1/RightContainer4"]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "магазин, товары, 
+продавцы"
+
+[node name="Sprite2D" type="Sprite2D" parent="task_1/RightContainer4/Button3"]
+position = Vector2(150.00005, 149.49998)
+scale = Vector2(0.117891245, 0.110546894)
+texture = ExtResource("7_ngk1x")
+
+[node name="Control3" type="Control" parent="task_1/RightContainer4"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="RightContainer5" type="VBoxContainer" parent="task_1"]
+offset_left = 961.0
+offset_top = 72.0
+offset_right = 1264.0
+offset_bottom = 1147.0
+alignment = 1
+
+[node name="Button2" type="Button" parent="task_1/RightContainer5"]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "кастрюля, черпак"
+
+[node name="Sprite2D" type="Sprite2D" parent="task_1/RightContainer5/Button2"]
+position = Vector2(150.49997, 149.00002)
+scale = Vector2(0.566, 0.57199997)
+texture = ExtResource("8_vuklg")
+
+[node name="Control2" type="Control" parent="task_1/RightContainer5"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="task_1/RightContainer5"]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "счёты"
+
+[node name="Sprite2D" type="Sprite2D" parent="task_1/RightContainer5/Button3"]
+position = Vector2(150.50002, 149.00002)
+scale = Vector2(0.29381445, 0.3659794)
+texture = ExtResource("9_cpcxm")
+
+[node name="Control3" type="Control" parent="task_1/RightContainer5"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="task_1"]
+offset_left = 445.0
+offset_top = 932.0
+offset_right = 1341.0
+offset_bottom = 1066.0
+theme_override_font_sizes/font_size = 50
+
+[node name="Label2" type="Label" parent="task_1"]
+offset_left = 8.0
+offset_top = 46.0
+offset_right = 1225.0
+offset_bottom = 259.0
+theme_override_font_sizes/font_size = 50
+text = "По картинкам определить, сценаристов 
+каких профессий на протяжении всех 
+лет существования колледжа готовились?"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+visible = false
+offset_left = 84.0
+offset_top = 336.0
+offset_right = 1832.0
+offset_bottom = 549.0
+theme_override_font_sizes/font_size = 75
+text = "Кто является создателем трактора \"гном\"?"
+horizontal_alignment = 1
+
+[node name="AnswerInput" type="LineEdit" parent="Label2"]
+layout_mode = 0
+offset_left = 249.0
+offset_top = 166.0
+offset_right = 1523.0
+offset_bottom = 255.0
+theme_override_font_sizes/font_size = 32
+placeholder_text = " Вводите в формате Смирнов К.В"
+
+[node name="CheckButton" type="Button" parent="Label2"]
+layout_mode = 0
+offset_left = 1544.0
+offset_top = 166.0
+offset_right = 1768.0
+offset_bottom = 252.0
+theme_override_font_sizes/font_size = 32
+text = "ПРОВЕРИТЬ"
+
+[node name="HintButton" type="Button" parent="Label2"]
+layout_mode = 0
+offset_left = -46.0
+offset_top = 166.0
+offset_right = 224.0
+offset_bottom = 252.0
+theme_override_font_sizes/font_size = 32
+text = "ℹ️ подсказка"
+
+[node name="HintButton2" type="Button" parent="Label2"]
+visible = false
+layout_mode = 0
+offset_left = -45.0
+offset_top = 263.0
+offset_right = 299.0
+offset_bottom = 349.0
+theme_override_font_sizes/font_size = 32
+text = "ℹ️ ещё подсказка"
+
+[node name="HintButton3" type="Button" parent="Label2"]
+visible = false
+layout_mode = 0
+offset_left = -46.0
+offset_top = 356.0
+offset_right = 298.0
+offset_bottom = 442.0
+theme_override_font_sizes/font_size = 32
+text = "ℹ️ ответ"
+
+[node name="Label2" type="Label" parent="Label2"]
+visible = false
+layout_mode = 0
+offset_left = 23.0
+offset_top = 269.0
+offset_right = 1771.0
+offset_bottom = 337.0
+theme_override_font_sizes/font_size = 40
+text = "Это мастер производственного обучения"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="Label2"]
+visible = false
+layout_mode = 0
+offset_left = 23.0
+offset_top = 332.0
+offset_right = 1771.0
+offset_bottom = 400.0
+theme_override_font_sizes/font_size = 40
+text = "Б...   Н.А."
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="Label2"]
+visible = false
+layout_mode = 0
+offset_left = 20.0
+offset_top = 387.0
+offset_right = 1768.0
+offset_bottom = 455.0
+theme_override_font_sizes/font_size = 40
+text = "Барташевич Н.А."
+horizontal_alignment = 1
+
+[node name="Reload" type="Button" parent="."]
+visible = false
+offset_left = 830.0
+offset_top = 967.0
+offset_right = 1118.0
+offset_bottom = 1072.0
+theme_override_font_sizes/font_size = 32
+text = "Разобрать"
+
+[node name="Label3" type="Label" parent="."]
+visible = false
+offset_left = 84.0
+offset_top = 46.0
+offset_right = 1850.0
+offset_bottom = 259.0
+theme_override_font_sizes/font_size = 75
+text = "В учреждении образования работали кружки:"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="Label3"]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 117.0
+offset_right = 1850.0
+offset_bottom = 330.0
+theme_override_font_sizes/font_size = 50
+text = "1. Студия \"Капель\"
+2. \"Хоровое пение\"
+3. \"Калейдоскоп\"
+4. \"Софит\"
+5. \"Техническое творчество\"
+6. \"Живой родник\"
+7. Военно-патриотический клуб \"Память поколений\"
+8. Баскетбол
+9. Воллейбол
+10. ОФП"
+
+[node name="CheckButton3" type="Button" parent="Label3"]
+layout_mode = 0
+offset_left = 780.0
+offset_top = 908.0
+offset_right = 1107.0
+offset_bottom = 1005.0
+theme_override_font_sizes/font_size = 42
+text = "ПРОДОЛЖИТЬ"
+
+[connection signal="pressed" from="Reload" to="." method="_on_reload_pressed"]

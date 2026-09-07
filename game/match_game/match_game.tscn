@@ -1,0 +1,338 @@
+[gd_scene load_steps=5 format=3 uid="uid://djnd2g4nkmkn0"]
+
+[ext_resource type="Script" uid="uid://dxgyitvgflm3h" path="res://game/match_game/match_game.gd" id="1_1v5lq"]
+[ext_resource type="Texture2D" uid="uid://c47ymbdc2o5qk" path="res://assets/match_game_backround.jpg" id="2_rbs4b"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rbs4b"]
+bg_color = Color(0.5151779, 0.5793711, 0.86988133, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lt4uh"]
+bg_color = Color(0.5528838, 0.5972091, 0.7245771, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="MatchGame" type="Node2D"]
+script = ExtResource("1_1v5lq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.288518, 0.28851798, 0.28851798, 1)
+texture_filter = 4
+position = Vector2(958.00006, 539.5)
+scale = Vector2(1.515625, 1.1364584)
+texture = ExtResource("2_rbs4b")
+
+[node name="LeftContainer" type="VBoxContainer" parent="."]
+offset_left = 10.0
+offset_top = 5.0
+offset_right = 332.0
+offset_bottom = 1075.0
+alignment = 1
+
+[node name="Button" type="Button" parent="LeftContainer"]
+custom_minimum_size = Vector2(0, 65)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_rbs4b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lt4uh")
+text = "1950 (ПТО)"
+
+[node name="Control" type="Control" parent="LeftContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="LeftContainer"]
+custom_minimum_size = Vector2(0, 65)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_rbs4b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lt4uh")
+text = "1954 (ПТО)"
+
+[node name="Control2" type="Control" parent="LeftContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="LeftContainer"]
+custom_minimum_size = Vector2(0, 65)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_rbs4b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lt4uh")
+text = "1962 (ПТО)"
+
+[node name="Control3" type="Control" parent="LeftContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="LeftContainer"]
+custom_minimum_size = Vector2(0, 65)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_rbs4b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lt4uh")
+text = "1969 (ПТО)"
+
+[node name="Control4" type="Control" parent="LeftContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="LeftContainer"]
+custom_minimum_size = Vector2(0, 65)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_rbs4b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lt4uh")
+text = "1981 (ПТО)"
+
+[node name="Control5" type="Control" parent="LeftContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="LeftContainer"]
+custom_minimum_size = Vector2(0, 65)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_rbs4b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lt4uh")
+text = "2005 (ПТО)"
+
+[node name="Control6" type="Control" parent="LeftContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="LeftContainer"]
+custom_minimum_size = Vector2(0, 65)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_rbs4b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lt4uh")
+text = "22.12.2007 (ПТО)"
+
+[node name="Control7" type="Control" parent="LeftContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="Button8" type="Button" parent="LeftContainer"]
+custom_minimum_size = Vector2(0, 65)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_rbs4b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lt4uh")
+text = "2019 (ПТО)"
+
+[node name="Control8" type="Control" parent="LeftContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="Button9" type="Button" parent="LeftContainer"]
+custom_minimum_size = Vector2(0, 65)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_rbs4b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lt4uh")
+text = "1950 (ССО)"
+
+[node name="Control9" type="Control" parent="LeftContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="Button10" type="Button" parent="LeftContainer"]
+custom_minimum_size = Vector2(0, 65)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_rbs4b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lt4uh")
+text = "1953 (ССО)"
+
+[node name="Control10" type="Control" parent="LeftContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="Button11" type="Button" parent="LeftContainer"]
+custom_minimum_size = Vector2(0, 65)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_rbs4b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lt4uh")
+text = "2001 (ССО)"
+
+[node name="Control11" type="Control" parent="LeftContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="Button12" type="Button" parent="LeftContainer"]
+custom_minimum_size = Vector2(0, 65)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_rbs4b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lt4uh")
+text = "2019 (ССО)"
+
+[node name="RightContainer" type="VBoxContainer" parent="."]
+offset_left = 455.0
+offset_top = 1.0
+offset_right = 1910.0
+offset_bottom = 1076.0
+alignment = 1
+
+[node name="Button2" type="Button" parent="RightContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_rbs4b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lt4uh")
+text = "Училище механизации сельского хозяйства №18"
+
+[node name="Control2" type="Control" parent="RightContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Button" type="Button" parent="RightContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_rbs4b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lt4uh")
+text = "Школа механизации сельского хозяйства"
+
+[node name="Control" type="Control" parent="RightContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Button8" type="Button" parent="RightContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_rbs4b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lt4uh")
+text = "УО «Ошмянский государственный аграрно-экономический колледж»"
+
+[node name="Control3" type="Control" parent="RightContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="RightContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_rbs4b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lt4uh")
+text = "Учреждение образования «Ошмянский государственный сельскохозяйственный профессиональный лицей»"
+
+[node name="Control4" type="Control" parent="RightContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Button10" type="Button" parent="RightContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_rbs4b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lt4uh")
+text = "Сельскохозяйственный техникум"
+
+[node name="Control5" type="Control" parent="RightContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="RightContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_rbs4b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lt4uh")
+text = "Среднее профессионально-техническое училище сельского хозяйства"
+
+[node name="Control6" type="Control" parent="RightContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="RightContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_rbs4b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lt4uh")
+text = "УО «Ошмянский государственный аграрно-технический колледж»"
+
+[node name="Control7" type="Control" parent="RightContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="RightContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_rbs4b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lt4uh")
+text = "Сельское профессионально-техническое училище №18"
+
+[node name="Control8" type="Control" parent="RightContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="RightContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_rbs4b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lt4uh")
+text = "Профессионально-техническое училище №192 сельскохозяйственного производства"
+
+[node name="Control9" type="Control" parent="RightContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Button12" type="Button" parent="RightContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_rbs4b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lt4uh")
+text = "Объединённый аграрно-экономический колледж (аграрно-экономический колледж + аграрно-технический колледж)"
+
+[node name="Control10" type="Control" parent="RightContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Button11" type="Button" parent="RightContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_rbs4b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lt4uh")
+text = "УО «Ошмянский государственный аграрно-экономический колледж»"
+
+[node name="Control11" type="Control" parent="RightContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Button9" type="Button" parent="RightContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_rbs4b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lt4uh")
+text = "Школа учётчиков и бригадиров"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 445.0
+offset_top = 932.0
+offset_right = 1341.0
+offset_bottom = 1066.0
+theme_override_font_sizes/font_size = 50
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

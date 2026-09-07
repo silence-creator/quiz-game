@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://752v51ludedu"]
+
+[ext_resource type="AudioStream" uid="uid://ce7cwy4vbwnk" path="res://assets/mainmenu.ogg" id="1_slnj2"]
+
+[node name="MusicPlayer" type="Node2D"]
+
+[node name="Music_MainMenu" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_slnj2")
+autoplay = true
+parameters/looping = true
